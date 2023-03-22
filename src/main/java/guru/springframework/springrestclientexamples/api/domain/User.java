@@ -8,16 +8,14 @@ import java.util.Map;
 
 @Data
 public class User implements Serializable{
-    private String gender;
-    private Name name;
-    private Location location;
+    private Long id;
+    private String name;
+    private String username;
     private String email;
-    private Login login;
+    private Address address;
     private String phone;
-    private Job job;
-    private Billing billing;
-    private String language;
-    private String currency;
-    private Map<String, Object> additionalProperties = new HashMap<>();
+    private String website;
+    private Company company;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private static final long serialVersionUID = 2070477722948565923L;
 }
